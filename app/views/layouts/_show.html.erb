@@ -1,6 +1,7 @@
 <h2>Name: <%= object.name %>, Calories: <%= object.calorie_count.count %></h2>
+<% path = object.calorie_count.countable_type.downcase.pluralize%>
 
-<%= link_to 'Edit', edit_food_path(object) %> |
-<%= link_to 'Delete', food_path(object),
+<%= link_to 'Edit', "/#{path}/#{object.id}/edit" %> |
+<%= link_to 'Delete', "/#{path}/#{object.id}",
                        :data => {confirm: 'Are you sure?',
                                 method: 'delete'}%>
