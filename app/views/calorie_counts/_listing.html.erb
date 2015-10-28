@@ -1,0 +1,14 @@
+<table class="table pretty">
+  <tr>
+    <th><%= sortable 'name' %></th>
+    <th><%= sortable 'calorie_counts.count', 'Calories' %></th>
+  </tr>
+  <% object.each do |item| %>
+    <tr>
+      <td><%= link_to item.name, "/#{item.class.name.downcase.pluralize}/#{item.id}" %></td>
+      <td><%= item.calorie_count.count %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= will_paginate object, :param_name => "#{object.first.class.name.downcase.pluralize}_page" %>

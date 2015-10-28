@@ -3,27 +3,31 @@
 <div class="row">
   <div class="col-xs-6">
     <h2>Foods</h2>
-    <ul id="food-list" >
-      <% @foods.each do |food| %>
-        <%= render food %>
-      <% end %>
-    </ul>
+    <div id="food-listing">
+      <%= render 'listing', object: @foods %>
+    </div>
     <hr>
-    <p>Total: <%= get_total 'Food' %></p>
+    <p>Total: <span id='food-total'><%= get_total 'Food' %></span></p>
     <h3><%= link_to "Add a new food", new_food_path, remote: true, id: "add-food-link" %></h3>
     <div id="add-food-form"></div>
   </div>
 
   <div class="col-xs-6">
     <h2>Exercises</h2>
-    <ul id="exercise-list">
-      <% @exercises.each do |exercise| %>
-        <%= render exercise %>
-      <% end %>
-    </ul>
+    <div id="exercise-listing">
+      <%= render 'listing', object: @exercises %>
+    </div>
     <hr>
-    <p>Total: <%= get_total 'Exercise' %></p>
+    <p>Total: <span id='exercise-total'><%= get_total 'Exercise' %></span></p>
     <h3><%= link_to "Add a new exercise", new_exercise_path, remote: true, id: "add-exercise-link" %></h3>
     <div id="add-exercise-form"></div>
   </div>
 </div>
+
+
+<!-- <ul id="food-list" >
+  <%# @foods.each do |food| %>
+    <%#= render food %>
+  <%# end %>
+</ul>
+<%#= will_paginate @foods %> -->

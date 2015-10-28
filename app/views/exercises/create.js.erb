@@ -1,5 +1,7 @@
-$('#exercise-list').append('<%= j render @exercise %>')
+$('#exercise-listing').html("<%= j render 'calorie_counts/listing', object: Exercise.all %>")
 
 $('#add-exercise-form').html('');
 
 $('#add-exercise-link').show();
+
+$('#exercise-total').text('<%= get_total "Exercise" %>')

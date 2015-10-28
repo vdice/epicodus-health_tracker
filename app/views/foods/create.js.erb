@@ -1,5 +1,7 @@
-$('#food-list').append('<%= j render @food %>')
+$('#food-listing').html("<%= j render 'calorie_counts/listing', object: Food.all %>")
 
 $('#add-food-form').html('');
 
 $('#add-food-link').show();
+
+$('#food-total').text('<%= get_total "Food" %>')

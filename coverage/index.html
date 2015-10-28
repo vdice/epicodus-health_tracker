@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-10-28T14:53:19-07:00">2015-10-28T14:53:19-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-10-28T16:43:42-07:00">2015-10-28T16:43:42-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">100.0%</span></span>
+    (<span class="covered_percent"><span class="green">98.59%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.55
+         2.46
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>41</b> files in total.
-    <b>268</b> relevant lines. 
-    <span class="green"><b>268</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed </span>
+    <b>284</b> relevant lines. 
+    <span class="green"><b>280</b> lines covered</span> and
+    <span class="red"><b>4</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -53,21 +53,21 @@
       <tr>
         <td class="strong"><a href="#4f7416df84c20a8f2b0dedad7a062406c031e06f" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>2</td>
-        <td>2</td>
+        <td>12</td>
+        <td>7</td>
+        <td>7</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>8.0</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#8cab57950bd620ed60f5f6f7ac904befdb37c9cf" class="src_link" title="app/controllers/calorie_counts_controller.rb">app/controllers/calorie_counts_controller.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>15</td>
-        <td>10</td>
-        <td>10</td>
-        <td>0</td>
-        <td>8.3</td>
+        <td class="yellow strong">87.5 %</td>
+        <td>28</td>
+        <td>16</td>
+        <td>14</td>
+        <td>2</td>
+        <td>11.4</td>
       </tr>
       
       <tr>
@@ -93,11 +93,11 @@
       <tr>
         <td class="strong"><a href="#8ce44d129c560f3a1fd5aae58c3da7eeb2727b54" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
+        <td>8</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>22.3</td>
       </tr>
       
       <tr>
@@ -332,22 +332,22 @@
       
       <tr>
         <td class="strong"><a href="#895f818ae1d0c5f630f9247e323520622b0dcee9" class="src_link" title="spec/features/add_exercise_pages_spec.rb">spec/features/add_exercise_pages_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="green strong">93.33 %</td>
         <td>20</td>
         <td>15</td>
-        <td>15</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td>14</td>
+        <td>1</td>
+        <td>0.9</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#6a87e6e1e3049209612276ccbfb40bcacf72f8af" class="src_link" title="spec/features/add_food_pages_spec.rb">spec/features/add_food_pages_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="green strong">93.33 %</td>
         <td>20</td>
         <td>15</td>
-        <td>15</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td>14</td>
+        <td>1</td>
+        <td>0.9</td>
       </tr>
       
       <tr>
@@ -453,7 +453,7 @@
       <tr>
         <td class="strong"><a href="#048e9b6c225eb00a6f911279769879fbc4e80a8c" class="src_link" title="spec/rails_helper.rb">spec/rails_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>71</td>
+        <td>72</td>
         <td>21</td>
         <td>21</td>
         <td>0</td>
@@ -481,8 +481,8 @@
     <h3>app/controllers/application_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>2</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -514,7 +514,49 @@
           <code class="ruby">  protect_from_forgery with: :exception</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  helper_method :get_total</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def get_total type</code>
+        </li>
+      
+        <li class="covered" data-hits="16" data-linenumber="8">
+          <span class="hits">16</span>
+          
+          <code class="ruby">    total = 0</code>
+        </li>
+      
+        <li class="covered" data-hits="20" data-linenumber="9">
+          <span class="hits">20</span>
+          
+          <code class="ruby">    CalorieCount.where(countable_type: type).map { |c| total += c.count }</code>
+        </li>
+      
+        <li class="covered" data-hits="16" data-linenumber="10">
+          <span class="hits">16</span>
+          
+          <code class="ruby">    total</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">end</code>
@@ -527,11 +569,11 @@
         <div class="source_table" id="8cab57950bd620ed60f5f6f7ac904befdb37c9cf">
   <div class="header">
     <h3>app/controllers/calorie_counts_controller.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="yellow">87.5 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>16</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -547,7 +589,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  helper_method :get_total</code>
+          <code class="ruby">  helper_method :sort_column, :sort_direction</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
@@ -568,61 +610,139 @@
           <code class="ruby">    @calories = CalorieCount.all</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="6">
-          <span class="hits">8</span>
-          
-          <code class="ruby">    @exercises = Exercise.all</code>
-        </li>
-      
-        <li class="covered" data-hits="8" data-linenumber="7">
-          <span class="hits">8</span>
-          
-          <code class="ruby">    @foods = Food.all</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="8" data-linenumber="7">
+          <span class="hits">8</span>
           
-          <code class="ruby">  def get_total type</code>
+          <code class="ruby">    if params[:sort] &amp;&amp; params[:sort].include?(&#39;calorie_count&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="16" data-linenumber="11">
-          <span class="hits">16</span>
+        <li class="missed" data-hits="0" data-linenumber="8">
           
-          <code class="ruby">    total = 0</code>
+          
+          <code class="ruby">      @exercises = Exercise.includes(:calorie_count)</code>
         </li>
       
-        <li class="covered" data-hits="23" data-linenumber="12">
-          <span class="hits">23</span>
+        <li class="missed" data-hits="0" data-linenumber="9">
           
-          <code class="ruby">    CalorieCount.where(countable_type: type).map { |c| total += c.count }</code>
+          
+          <code class="ruby">      @foods = Food.includes(:calorie_count)</code>
         </li>
       
-        <li class="covered" data-hits="16" data-linenumber="13">
-          <span class="hits">16</span>
+        <li class="never" data-hits="" data-linenumber="10">
           
-          <code class="ruby">    total</code>
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="11">
+          <span class="hits">8</span>
+          
+          <code class="ruby">      @exercises = Exercise.all</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="12">
+          <span class="hits">8</span>
+          
+          <code class="ruby">      @foods = Food.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="15">
+          <span class="hits">8</span>
+          
+          <code class="ruby">    @exercises = @exercises.order(sort_column + &#39; &#39; + sort_direction).paginate(:page =&gt; params[:exercises_page], :per_page =&gt; 5)</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="16">
+          <span class="hits">8</span>
+          
+          <code class="ruby">    @foods = @foods.order(sort_column + &#39; &#39; + sort_direction).paginate(:page =&gt; params[:foods_page], :per_page =&gt; 5)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def sort_column</code>
+        </li>
+      
+        <li class="covered" data-hits="80" data-linenumber="22">
+          <span class="hits">80</span>
+          
+          <code class="ruby">    %w[name calorie_counts.count].include?(params[:sort]) ? params[:sort] : &#39;name&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def sort_direction</code>
+        </li>
+      
+        <li class="covered" data-hits="48" data-linenumber="26">
+          <span class="hits">48</span>
+          
+          <code class="ruby">    %w[asc desc].include?(params[:direction]) ? params[:direction] : &#39;asc&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">end</code>
@@ -1285,8 +1405,8 @@
     <h3>app/helpers/application_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>1</b> relevant lines. 
-      <span class="green"><b>1</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1300,7 +1420,43 @@
           <code class="ruby">module ApplicationHelper</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def sortable(column, title = nil)</code>
+        </li>
+      
+        <li class="covered" data-hits="34" data-linenumber="3">
+          <span class="hits">34</span>
+          
+          <code class="ruby">    title ||= column.titleize</code>
+        </li>
+      
+        <li class="covered" data-hits="34" data-linenumber="4">
+          <span class="hits">34</span>
+          
+          <code class="ruby">    css_class = column == sort_column ? &quot;current #{sort_direction}&quot; : nil</code>
+        </li>
+      
+        <li class="covered" data-hits="32" data-linenumber="5">
+          <span class="hits">32</span>
+          
+          <code class="ruby">    direction = column == sort_column &amp;&amp; sort_direction == &#39;asc&#39; ? &#39;desc&#39; : &#39;asc&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="32" data-linenumber="6">
+          <span class="hits">32</span>
+          
+          <code class="ruby">    link_to title, {:sort =&gt; column, :direction =&gt; direction}, {:class =&gt; css_class}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
@@ -2915,11 +3071,11 @@
         <div class="source_table" id="895f818ae1d0c5f630f9247e323520622b0dcee9">
   <div class="header">
     <h3>spec/features/add_exercise_pages_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="green">93.33 %</span> covered</h4>
     <div>
       <b>15</b> relevant lines. 
-      <span class="green"><b>15</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -2986,8 +3142,8 @@
           <code class="ruby">    expect(page).to have_content &#39;Biking&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
           
           <code class="ruby">    expect(page).to have_content &#39;90&#39;</code>
         </li>
@@ -3053,11 +3209,11 @@
         <div class="source_table" id="6a87e6e1e3049209612276ccbfb40bcacf72f8af">
   <div class="header">
     <h3>spec/features/add_food_pages_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="green">93.33 %</span> covered</h4>
     <div>
       <b>15</b> relevant lines. 
-      <span class="green"><b>15</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -3124,8 +3280,8 @@
           <code class="ruby">    expect(page).to have_content &#39;Honeycrisp Apple&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
           
           <code class="ruby">    expect(page).to have_content &#39;90&#39;</code>
         </li>
@@ -4486,193 +4642,199 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="40">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="40">
           
-          <code class="ruby">  config.before(:suite) do</code>
+          
+          <code class="ruby">  # Bring in for AJAX tests:</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="41">
           <span class="hits">1</span>
           
-          <code class="ruby">    DatabaseCleaner.strategy = :truncation</code>
+          <code class="ruby">  config.before(:suite) do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    DatabaseCleaner.strategy = :truncation</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="44">
+        <li class="covered" data-hits="1" data-linenumber="45">
           <span class="hits">1</span>
           
           <code class="ruby">  config.around(:each) do |example|</code>
         </li>
       
-        <li class="covered" data-hits="17" data-linenumber="45">
+        <li class="covered" data-hits="17" data-linenumber="46">
           <span class="hits">17</span>
           
           <code class="ruby">    DatabaseCleaner.cleaning do</code>
         </li>
       
-        <li class="covered" data-hits="17" data-linenumber="46">
+        <li class="covered" data-hits="17" data-linenumber="47">
           <span class="hits">17</span>
           
           <code class="ruby">      example.run</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="47">
+        <li class="never" data-hits="" data-linenumber="48">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="48">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">  # RSpec Rails can automatically mix in different behaviours to your tests</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">  # based on their file location, for example enabling you to call `get` and</code>
+          <code class="ruby">  # RSpec Rails can automatically mix in different behaviours to your tests</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
           
           
-          <code class="ruby">  # `post` in specs under `spec/controllers`.</code>
+          <code class="ruby">  # based on their file location, for example enabling you to call `get` and</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="53">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby">  # `post` in specs under `spec/controllers`.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="54">
           
           
-          <code class="ruby">  # You can disable this behaviour by removing the line below, and instead</code>
+          <code class="ruby">  #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
           
           
-          <code class="ruby">  # explicitly tag your specs with their type, e.g.:</code>
+          <code class="ruby">  # You can disable this behaviour by removing the line below, and instead</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="56">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby">  # explicitly tag your specs with their type, e.g.:</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby">  #     RSpec.describe UsersController, :type =&gt; :controller do</code>
+          <code class="ruby">  #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="58">
           
           
-          <code class="ruby">  #       # ...</code>
+          <code class="ruby">  #     RSpec.describe UsersController, :type =&gt; :controller do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="59">
           
           
-          <code class="ruby">  #     end</code>
+          <code class="ruby">  #       # ...</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="60">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby">  #     end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="61">
           
           
-          <code class="ruby">  # The different available types are documented in the features, such as in</code>
+          <code class="ruby">  #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="62">
           
           
+          <code class="ruby">  # The different available types are documented in the features, such as in</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
           <code class="ruby">  # https://relishapp.com/rspec/rspec-rails/docs</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="63">
+        <li class="covered" data-hits="1" data-linenumber="64">
           <span class="hits">1</span>
           
           <code class="ruby">  config.infer_spec_type_from_file_location!</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="64">
+        <li class="never" data-hits="" data-linenumber="65">
           
           
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="65">
+        <li class="never" data-hits="" data-linenumber="66">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="66">
+        <li class="covered" data-hits="1" data-linenumber="67">
           <span class="hits">1</span>
           
           <code class="ruby">Shoulda::Matchers.configure do |config|</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="67">
+        <li class="covered" data-hits="1" data-linenumber="68">
           <span class="hits">1</span>
           
           <code class="ruby">  config.integrate do |with|</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="68">
+        <li class="covered" data-hits="1" data-linenumber="69">
           <span class="hits">1</span>
           
           <code class="ruby">    with.test_framework :rspec</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="69">
+        <li class="covered" data-hits="1" data-linenumber="70">
           <span class="hits">1</span>
           
           <code class="ruby">    with.library :rails</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="70">
+        <li class="never" data-hits="" data-linenumber="71">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="71">
+        <li class="never" data-hits="" data-linenumber="72">
           
           
           <code class="ruby">end</code>

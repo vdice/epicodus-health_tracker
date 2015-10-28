@@ -1,15 +1,17 @@
 class CalorieCountsController < ApplicationController
-  helper_method :get_total
-
   def index
     @calories = CalorieCount.all
-    @exercises = Exercise.all
-    @foods = Food.all
-  end
 
-  def get_total type
-    total = 0
-    CalorieCount.where(countable_type: type).map { |c| total += c.count }
-    total
+    if params[:sort] && params[:sort].include?('calorie_count')
+      @exercises = Exercise.includes(:calorie_count)
+      @foods = Food.includes(:calorie_count)
+    else
+      @exercises = Exercise.all
+      @foods = Food.all
+    end
+
+    # TODO: paginate in food/exercise or application controller
+    @exercises = @exercises.order(sort_column + ' ' + sort_direction).paginate(:page => params[:exercises_page], :per_page => 5)
+    @foods = @foods.order(sort_column + ' ' + sort_direction).paginate(:page => params[:foods_page], :per_page => 5)
   end
 end
