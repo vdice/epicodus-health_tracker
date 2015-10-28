@@ -1,15 +1,26 @@
 <h1>Health Tracker</h1>
 
-<ul>
-  <% @foods.each do |food| %>
-    <li>NAME: <%= link_to food.name, food_path(food) %>, COUNT: <%= food.calorie_count.count %></li>
-  <% end %>
-</ul>
+<div class="row">
+  <div class="col-xs-6">
+    <h2>Foods</h2>
+    <ul>
+      <% @foods.each do |food| %>
+        <li><%= link_to food.name, food_path(food) %>, Calories: <%= food.calorie_count.count %></li>
+      <% end %>
+    </ul>
+    <hr>
+    <p>Total: <%= @food_calories %></p>
+    <h3><%= link_to "Add a new food", new_food_path %></h3>
+  </div>
 
-<%= link_to "Add a new food", new_food_path %>
-
-<ul>
-  <% @exercises.each do |exercise| %>
-    <li>EXERCISE NAME: <%= exercise.name %>, COUNT: <%= exercise.calorie_count.count %></li>
-  <% end %>
-</ul>
+  <div class="col-xs-6">
+    <h2>Exercises</h2>
+    <ul>
+      <% @exercises.each do |exercise| %>
+        <li><%= link_to exercise.name, exercise_path(exercise) %>, Calories: <%= exercise.calorie_count.count %></li>
+      <% end %>
+    </ul>
+      <p>Total: <%= @exercise_calories %></p>
+    <h3><%= link_to "Add a new exercise", new_exercise_path %></h3>
+  </div>
+</div>

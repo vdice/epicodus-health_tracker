@@ -1,0 +1,6 @@
+<h2>Name: <%= object.name %>, Calories: <%= object.calorie_count.count %></h2>
+
+<%= link_to 'Edit', edit_food_path(object) %> |
+<%= link_to 'Delete', food_path(object),
+                       :data => {confirm: 'Are you sure?',
+                                method: 'delete'}%>
