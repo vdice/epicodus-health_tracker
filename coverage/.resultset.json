@@ -1,12 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/health_tracker/spec/models/calorie_count_spec.rb": [
+      "/Users/Guest/Desktop/health_tracker/spec/controllers/calorie_counts_controller_spec.rb": [
         1,
         null,
         1,
-        2,
-        2,
+        null,
         null
       ],
       "/Users/Guest/Desktop/health_tracker/spec/rails_helper.rb": [
@@ -267,47 +266,60 @@
       ],
       "/Users/Guest/Desktop/health_tracker/config/routes.rb": [
         1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/health_tracker/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/health_tracker/app/helpers/calorie_counts_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/health_tracker/app/controllers/calorie_counts_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/health_tracker/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/health_tracker/spec/features/view_index_pages_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
         null,
         null,
         null,
+        1,
         null,
         null,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        null
+      ],
+      "/Users/Guest/Desktop/health_tracker/spec/helpers/calorie_counts_helper_spec.rb": [
+        1,
         null,
         null,
         null,
@@ -323,8 +335,12 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/health_tracker/app/helpers/application_helper.rb": [
+      "/Users/Guest/Desktop/health_tracker/spec/models/calorie_count_spec.rb": [
         1,
+        null,
+        1,
+        2,
+        2,
         null
       ],
       "/Users/Guest/Desktop/health_tracker/app/models/calorie_count.rb": [
@@ -362,6 +378,6 @@
         null
       ]
     },
-    "timestamp": 1446051338
+    "timestamp": 1446053720
   }
 }
