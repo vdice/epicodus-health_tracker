@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'add an exercise item process' do
-  it 'can add a new exercise item' do
+  it 'can add a new exercise item', js: true do
     visit root_path
     click_on 'Add a new exercise'
     fill_in 'Name', :with => 'Biking'
@@ -11,7 +11,7 @@ describe 'add an exercise item process' do
     expect(page).to have_content '90'
   end
 
-  it 'throw errors if a field is empty' do
+  it 'throw errors if a field is empty', js: true do
     visit root_path
     click_on 'Add a new exercise'
     click_on 'Create Exercise'

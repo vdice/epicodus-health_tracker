@@ -3,12 +3,20 @@ class ExercisesController < ApplicationController
   def new
     @exercise = Exercise.new
     @exercise.calorie_count = CalorieCount.new
+
+    respond_to do |format|
+      #format.html { redirect_to root_path }
+      format.js
+    end
   end
 
   def create
     @exercise = Exercise.new(exercise_params)
     if @exercise.save
-      redirect_to root_path
+      respond_to do |format|
+        format.html { redirect_to root_path }
+        format.js
+      end
     else
       render :new
     end

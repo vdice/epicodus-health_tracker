@@ -3,25 +3,27 @@
 <div class="row">
   <div class="col-xs-6">
     <h2>Foods</h2>
-    <ul>
+    <ul id="food-list" >
       <% @foods.each do |food| %>
-        <li><%= link_to food.name, food_path(food) %>, Calories: <%= food.calorie_count.count %></li>
+        <%= render food %>
       <% end %>
     </ul>
     <hr>
     <p>Total: <%= get_total 'Food' %></p>
-    <h3><%= link_to "Add a new food", new_food_path %></h3>
+    <h3><%= link_to "Add a new food", new_food_path, remote: true, id: "add-food-link" %></h3>
+    <div id="add-food-form"></div>
   </div>
 
   <div class="col-xs-6">
     <h2>Exercises</h2>
-    <ul>
+    <ul id="exercise-list">
       <% @exercises.each do |exercise| %>
-        <li><%= link_to exercise.name, exercise_path(exercise) %>, Calories: <%= exercise.calorie_count.count %></li>
+        <%= render exercise %>
       <% end %>
     </ul>
     <hr>
     <p>Total: <%= get_total 'Exercise' %></p>
-    <h3><%= link_to "Add a new exercise", new_exercise_path %></h3>
+    <h3><%= link_to "Add a new exercise", new_exercise_path, remote: true, id: "add-exercise-link" %></h3>
+    <div id="add-exercise-form"></div>
   </div>
 </div>

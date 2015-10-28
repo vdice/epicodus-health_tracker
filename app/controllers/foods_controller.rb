@@ -3,12 +3,20 @@ class FoodsController < ApplicationController
   def new
     @food = Food.new
     @food.calorie_count = CalorieCount.new
+
+    respond_to do |format|
+      #format.html { redirect_to root_path }
+      format.js
+    end
   end
 
   def create
     @food = Food.new(food_params)
     if @food.save
-      redirect_to root_path
+      respond_to do |format|
+        format.html { redirect_to root_path }
+        format.js
+      end
     else
       render :new
     end

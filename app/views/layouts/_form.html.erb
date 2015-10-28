@@ -1,6 +1,6 @@
 <%= render 'layouts/errors', object: object %>
 
-<%= form_for object do |f| %>
+<%= form_for object, remote: true do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <%= f.fields_for :calorie_count do |ff| %>
