@@ -1,4 +1,5 @@
 class Food < ActiveRecord::Base
-  validates :name, presence: true
   has_one :calorie_count, as: :countable
+  accepts_nested_attributes_for :calorie_count
+  validates :name, presence: true
 end

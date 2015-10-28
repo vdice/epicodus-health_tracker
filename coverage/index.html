@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-10-28T10:35:20-07:00">2015-10-28T10:35:20-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-10-28T11:20:05-07:00">2015-10-28T11:20:05-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">100.0%</span></span>
+    (<span class="covered_percent"><span class="green">93.65%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.06
+       <span class="red">
+         0.99
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>30</b> files in total.
-    <b>104</b> relevant lines. 
-    <span class="green"><b>104</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed </span>
+    <b>34</b> files in total.
+    <b>126</b> relevant lines. 
+    <span class="green"><b>118</b> lines covered</span> and
+    <span class="red"><b>8</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -71,6 +71,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#f947d19d202a1c7ce3475131ee54f0c1d3fee2aa" class="src_link" title="app/controllers/foods_controller.rb">app/controllers/foods_controller.rb</a></td>
+        <td class="red strong">38.46 %</td>
+        <td>22</td>
+        <td>13</td>
+        <td>5</td>
+        <td>8</td>
+        <td>0.4</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#8ce44d129c560f3a1fd5aae58c3da7eeb2727b54" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
@@ -82,6 +92,16 @@
       
       <tr>
         <td class="strong"><a href="#305df69d584ed83e9073051e175f1ef14c89a7be" class="src_link" title="app/helpers/calorie_counts_helper.rb">app/helpers/calorie_counts_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#b4720597a53ce052634865e4612c608ba4b9567c" class="src_link" title="app/helpers/foods_helper.rb">app/helpers/foods_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -113,9 +133,9 @@
       <tr>
         <td class="strong"><a href="#c86f45e62a829407a3c4ec54aa62d0f644366f4b" class="src_link" title="app/models/food.rb">app/models/food.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>5</td>
         <td>4</td>
-        <td>3</td>
-        <td>3</td>
+        <td>4</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -243,15 +263,25 @@
       <tr>
         <td class="strong"><a href="#fa290ff353284dba747c6bca7bf95d0eb37764fc" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>4</td>
-        <td>3</td>
-        <td>3</td>
+        <td>6</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#ae3d2cca53124ee8300b9a08da3941a845d0de8a" class="src_link" title="spec/controllers/calorie_counts_controller_spec.rb">spec/controllers/calorie_counts_controller_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#f687d6fc82b721a5cd6db4f1fab221cb7f0156a0" class="src_link" title="spec/controllers/foods_controller_spec.rb">spec/controllers/foods_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
         <td>2</td>
@@ -306,6 +336,16 @@
         <td>15</td>
         <td>1</td>
         <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#486f8dff59eef226b55ffaf7dbbf1be45a617aff" class="src_link" title="spec/helpers/foods_helper_spec.rb">spec/helpers/foods_helper_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>15</td>
+        <td>3</td>
+        <td>3</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -474,6 +514,156 @@
   </pre>
 </div>
       
+        <div class="source_table" id="f947d19d202a1c7ce3475131ee54f0c1d3fee2aa">
+  <div class="header">
+    <h3>app/controllers/foods_controller.rb</h3>
+    <h4><span class="red">38.46 %</span> covered</h4>
+    <div>
+      <b>13</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>8</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class FoodsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">    @food = Food.new</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">    @food.calorie_count.build</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">    @food = Food.new(food_params)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    binding.pry</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">    if @food.save</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">      redirect_to root_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">      render :new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def food_params</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="20">
+          
+          
+          <code class="ruby">    params.require(:food).permit(:name, calorie_count_attributes: [:count] )</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="8ce44d129c560f3a1fd5aae58c3da7eeb2727b54">
   <div class="header">
     <h3>app/helpers/application_helper.rb</h3>
@@ -522,6 +712,36 @@
           <span class="hits">1</span>
           
           <code class="ruby">module CalorieCountsHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="b4720597a53ce052634865e4612c608ba4b9567c">
+  <div class="header">
+    <h3>app/helpers/foods_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module FoodsHelper</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="2">
@@ -623,8 +843,8 @@
     <h3>app/models/food.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -641,16 +861,22 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :name, presence: true</code>
+          <code class="ruby">  has_one :calorie_count, as: :countable</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">  has_one :calorie_count, as: :countable</code>
+          <code class="ruby">  accepts_nested_attributes_for :calorie_count</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :name, presence: true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
@@ -1763,8 +1989,8 @@
     <h3>config/routes.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1790,7 +2016,19 @@
           <code class="ruby">  resources :calorie_counts</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  resources :foods</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  resources :exercises</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby"> end</code>
@@ -1830,6 +2068,54 @@
           <span class="hits">1</span>
           
           <code class="ruby">RSpec.describe CalorieCountsController, type: :controller do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="f687d6fc82b721a5cd6db4f1fab221cb7f0156a0">
+  <div class="header">
+    <h3>spec/controllers/foods_controller_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe FoodsController, type: :controller do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
@@ -2262,6 +2548,114 @@
           
           
           <code class="ruby"># end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="486f8dff59eef226b55ffaf7dbbf1be45a617aff">
+  <div class="header">
+    <h3>spec/helpers/foods_helper_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"># Specs in this file have access to a helper object that includes</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"># the FoodsHelper. For example:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">#</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"># describe FoodsHelper do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">#   describe &quot;string concat&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">#     it &quot;concats two strings with spaces&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">#       expect(helper.concat_strings(&quot;this&quot;,&quot;that&quot;)).to eq(&quot;this that&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">#     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">#   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"># end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe FoodsHelper, type: :helper do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  pending &quot;add some examples to (or delete) #{__FILE__}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">end</code>
         </li>
       
     </ol>

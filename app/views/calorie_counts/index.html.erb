@@ -2,9 +2,11 @@
 
 <ul>
   <% @foods.each do |food| %>
-    <li>NAME: <%= food.name %>, COUNT: <%= food.calorie_count.count %></li>
+    <li>NAME: <%= link_to food.name, food_path(food) %>, COUNT: <%= food.calorie_count.count %></li>
   <% end %>
 </ul>
+
+<%= link_to "Add a new food", new_food_path %>
 
 <ul>
   <% @exercises.each do |exercise| %>

@@ -268,6 +268,8 @@
         1,
         1,
         1,
+        1,
+        1,
         null
       ],
       "/Users/Guest/Desktop/health_tracker/app/helpers/application_helper.rb": [
@@ -275,6 +277,10 @@
         null
       ],
       "/Users/Guest/Desktop/health_tracker/app/helpers/calorie_counts_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/health_tracker/app/helpers/foods_helper.rb": [
         1,
         null
       ],
@@ -292,6 +298,37 @@
         null,
         null,
         1,
+        null
+      ],
+      "/Users/Guest/Desktop/health_tracker/spec/controllers/foods_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/health_tracker/app/controllers/foods_controller.rb": [
+        1,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
         null
       ],
       "/Users/Guest/Desktop/health_tracker/spec/features/view_index_pages_spec.rb": [
@@ -335,6 +372,23 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/health_tracker/spec/helpers/foods_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
       "/Users/Guest/Desktop/health_tracker/spec/models/calorie_count_spec.rb": [
         1,
         null,
@@ -375,9 +429,10 @@
         1,
         1,
         1,
+        1,
         null
       ]
     },
-    "timestamp": 1446053720
+    "timestamp": 1446056405
   }
 }
