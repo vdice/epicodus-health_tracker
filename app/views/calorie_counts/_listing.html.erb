@@ -11,4 +11,4 @@
   <% end %>
 </table>
 
-<%= will_paginate object, :param_name => "#{object.first.class.name.downcase.pluralize}_page" %>
+<%= will_paginate object, :param_name => "#{object.first.class.name.downcase.pluralize}_page", :params => { :controller => "calorie_counts", action: "index" } %>

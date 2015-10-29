@@ -11,6 +11,7 @@ class FoodsController < ApplicationController
   end
 
   def create
+    @paginated_foods = Food.all.order(sort_column + ' ' + sort_direction).paginate(:page => params[:foods_page], :per_page => 5)
     @food = Food.new(food_params)
     if @food.save
       respond_to do |format|

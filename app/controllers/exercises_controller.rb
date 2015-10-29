@@ -5,12 +5,12 @@ class ExercisesController < ApplicationController
     @exercise.calorie_count = CalorieCount.new
 
     respond_to do |format|
-      #format.html { redirect_to root_path }
       format.js
     end
   end
 
   def create
+    @paginated_exercises = Exercise.all.order(sort_column + ' ' + sort_direction).paginate(:page => params[:exercises_page], :per_page => 5)
     @exercise = Exercise.new(exercise_params)
     if @exercise.save
       respond_to do |format|

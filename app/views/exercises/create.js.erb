@@ -1,4 +1,4 @@
-$('#exercise-listing').html("<%= j render 'calorie_counts/listing', object: Exercise.all %>")
+$('#exercise-listing').html("<%= j render 'calorie_counts/listing', object: @paginated_exercises %>")
 
 $('#add-exercise-form').html('');
 

@@ -1,4 +1,4 @@
-$('#food-listing').html("<%= j render 'calorie_counts/listing', object: Food.all %>")
+$('#food-listing').html("<%= j render 'calorie_counts/listing', object: @paginated_foods %>")
 
 $('#add-food-form').html('');
 
