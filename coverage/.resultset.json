@@ -1,9 +1,23 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/health_tracker/spec/controllers/calorie_counts_controller_spec.rb": [
+      "/Users/Guest/Desktop/health_tracker/spec/controllers/application_controller_spec.rb": [
         1,
         null,
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
         1,
         null,
         null
@@ -54,8 +68,8 @@
         null,
         null,
         1,
-        17,
-        17,
+        19,
+        19,
         null,
         null,
         null,
@@ -302,25 +316,6 @@
         1,
         null
       ],
-      "/Users/Guest/Desktop/health_tracker/app/controllers/calorie_counts_controller.rb": [
-        1,
-        1,
-        8,
-        null,
-        8,
-        0,
-        0,
-        null,
-        8,
-        8,
-        null,
-        null,
-        null,
-        8,
-        8,
-        null,
-        null
-      ],
       "/Users/Guest/Desktop/health_tracker/app/controllers/application_controller.rb": [
         1,
         null,
@@ -330,6 +325,14 @@
         1,
         null,
         1,
+        18,
+        1,
+        null,
+        17,
+        null,
+        null,
+        null,
+        1,
         1,
         18,
         24,
@@ -337,11 +340,45 @@
         null,
         null,
         1,
-        92,
+        84,
         null,
         null,
         1,
-        56,
+        48,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/health_tracker/spec/controllers/calorie_counts_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/health_tracker/app/controllers/calorie_counts_controller.rb": [
+        1,
+        1,
+        8,
+        8,
+        8,
+        null,
+        null,
+        8,
+        8,
+        null,
+        8,
+        0,
+        0,
+        null,
+        null,
+        8,
+        0,
+        null,
+        8,
+        null,
+        null,
+        8,
+        8,
         null,
         null
       ],
@@ -689,6 +726,6 @@
         null
       ]
     },
-    "timestamp": 1446136621
+    "timestamp": 1446146600
   }
 }

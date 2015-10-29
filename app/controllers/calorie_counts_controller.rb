@@ -4,9 +4,13 @@ class CalorieCountsController < ApplicationController
     @exercises = Exercise.all
     @foods = Food.all
 
+
+    @exercises = search(Exercise, params[:search])
+    @foods = search(Food, params[:search])
+
     if params[:sort] && params[:sort].include?('calorie_count')
-      @exercises = Exercise.includes(:calorie_count)
-      @foods = Food.includes(:calorie_count)
+      @exercises = @exercises.includes(:calorie_count)
+      @foods = @foods.includes(:calorie_count)
     end
 
     if params[:class_name] && params[:class_name] == "exercise"

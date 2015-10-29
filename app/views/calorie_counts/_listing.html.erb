@@ -1,3 +1,6 @@
+<%= hidden_field_tag :direction, params[:direction] %>
+<%= hidden_field_tag :sort, params[:sort] %>
+
 <table class="table pretty">
   <tr>
     <th><%= sortable 'name', "#{object.first.class.name.downcase}" %></th>
@@ -11,4 +14,4 @@
   <% end %>
 </table>
 
-<%= will_paginate object, :param_name => "#{object.first.class.name.downcase.pluralize}_page", :params => { :controller => "calorie_counts", action: "index" } %>
+<%= will_paginate object, :param_name => "#{object.first.class.name.downcase.pluralize}_page", :params => { :controller => :calorie_counts, action: :index } %>

@@ -2,8 +2,16 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
-  
+
   helper_method :get_total, :sort_column, :sort_direction
+
+  def search model, search
+    if search
+      model.where('lower(name) LIKE ?', "%#{search.downcase}%")
+    else
+      model
+    end
+  end
 
   private
   def get_total type

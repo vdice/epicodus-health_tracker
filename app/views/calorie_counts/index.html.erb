@@ -1,24 +1,41 @@
 <h1>Health Tracker</h1>
 
+<%= form_tag root_path, {method: 'get', id: 'search-field'} do %>
+
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "search", :name => nil %>
+  </p>
+
+  <div class="row">
+    <div class="col-xs-6">
+      <h2>Foods</h2>
+      <div id="food-listing">
+        <%= render 'listing', object: @foods %>
+      </div>
+      <hr>
+      <p>Total: <span id='food-total'><%= get_total 'Food' %></span></p>
+
+    </div>
+
+    <div class="col-xs-6">
+      <h2>Exercises</h2>
+      <div id="exercise-listing">
+        <%= render 'listing', object: @exercises %>
+      </div>
+      <hr>
+      <p>Total: <span id='exercise-total'><%= get_total 'Exercise' %></span></p>
+
+    </div>
+  </div>
+<% end %>
+
 <div class="row">
   <div class="col-xs-6">
-    <h2>Foods</h2>
-    <div id="food-listing">
-      <%= render 'listing', object: @foods %>
-    </div>
-    <hr>
-    <p>Total: <span id='food-total'><%= get_total 'Food' %></span></p>
     <h3><%= link_to "Add a new food", new_food_path, remote: true, id: "add-food-link" %></h3>
     <div id="add-food-form"></div>
   </div>
-
   <div class="col-xs-6">
-    <h2>Exercises</h2>
-    <div id="exercise-listing">
-      <%= render 'listing', object: @exercises %>
-    </div>
-    <hr>
-    <p>Total: <span id='exercise-total'><%= get_total 'Exercise' %></span></p>
     <h3><%= link_to "Add a new exercise", new_exercise_path, remote: true, id: "add-exercise-link" %></h3>
     <div id="add-exercise-form"></div>
   </div>
