@@ -15,16 +15,19 @@
  */
 
 
-@import "bootstrap-sprockets"
-@import "bootstrap"
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
-.pretty th .current
-  padding-right: 12px
-  background-repeat: no-repeat
-  background-position: right center
+th .current {
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
 
-.pretty th .asc
-  content: "\9650"
+th .asc {
+  background-image: url(<%= asset_path "up-arrow.png" %>);
+}
 
-.pretty th .desc
-  content: "\9660"
+th .desc {
+  background-image: url(<%= asset_path "down-arrow.png" %>);
+}

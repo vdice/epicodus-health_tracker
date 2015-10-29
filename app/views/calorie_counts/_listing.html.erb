@@ -1,7 +1,7 @@
 <table class="table pretty">
   <tr>
-    <th><%= sortable 'name' %></th>
-    <th><%= sortable 'calorie_counts.count', 'Calories' %></th>
+    <th><%= sortable 'name', "#{object.first.class.name.downcase}" %></th>
+    <th><%= sortable 'calorie_counts.count', "#{object.first.class.name.downcase}", 'Calories' %></th>
   </tr>
   <% object.each do |item| %>
     <tr>
