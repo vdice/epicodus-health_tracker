@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 describe 'add a food item process' do
+  
   it 'can add a new food item', js: true do
     visit root_path
     click_on 'Add a new food'

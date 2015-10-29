@@ -1,6 +1,6 @@
 <h1>Health Tracker</h1>
 
-<%= form_tag root_path, {method: 'get', id: 'search-field'} do %>
+<%= form_tag root_path, {method: 'get', id: 'search-field', remote: true} do %>
 
   <p>
     <%= text_field_tag :search, params[:search] %>

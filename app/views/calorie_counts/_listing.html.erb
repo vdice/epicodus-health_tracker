@@ -1,6 +1,5 @@
 <%= hidden_field_tag :direction, params[:direction] %>
 <%= hidden_field_tag :sort, params[:sort] %>
-
 <table class="table pretty">
   <tr>
     <th><%= sortable 'name', "#{object.first.class.name.downcase}" %></th>
